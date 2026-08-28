@@ -15,18 +15,34 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
-<body class="d-flex flex-column min-vh-100">
-    <header class="navbar bg-dark text-light">
-        <a href="index.html" class="my-auto mx-3 text-uppercase badge fs-6 text-decoration-none">Lucas portfolio</a>
+<header class="navbar navbar-expand-md navbar-dark bg-dark border-bottom border-secondary sticky-top shadow-sm">
+    <div class="container">
+        
+        <a href="index.html" class="navbar-brand fw-bold text-uppercase fs-5">
+            Lucas <span class="text-primary">Portfolio</span>
+        </a>
 
-        <a href="projetos.html"
-            class="text-uppercase text-light text-decoration-none m-auto btn btn-outline-secondary px-5">projetos
-            github</a>
-        <a href="experiencia.html"
-            class="text-uppercase text-light text-decoration-none m-auto btn btn-outline-secondary px-5">experiência</a>
-        <a href="contatos.html"
-            class="text-uppercase text-light text-decoration-none m-auto btn btn-outline-secondary px-5">Contatos</a>
-    </header>
+        
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Alternar navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+       
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto align-items-center gap-2 mt-3 mt-md-0">
+                <li class="nav-item">
+                    <a href="experiencia.html" class="nav-link px-3 fw-medium">Experiência</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projetos.html" class="nav-link px-3 fw-medium">Projetos GitHub</a>
+                </li>
+                <li class="nav-item ms-md-2">
+                    <a href="contatos.html" class="btn btn-outline-primary rounded-pill px-4 fw-semibold text-uppercase">Contatos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
 
     <!-- Conteúdo principal -->
     <main class="flex-grow-1 container my-5 border border-4 border-black">
@@ -37,13 +53,59 @@
                     <img class="img-fluid col-2 m-auto" src="https://picsum.photos/200/300"
                         alt="Foto de Perfil de Lucas">
                 </div>
-                <p class="">Analista de Desenvolvimento de Sistema.</p>
+                <p class="mt-2 fw-bold fs-3">Analista de Desenvolvimento de Sistema.</p>
             </div>
-            <div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem aliquam dolore aperiam ad voluptatem,
-                    harum, et consequuntur distinctio ratione quasi natus minus omnis ex nostrum. Doloremque incidunt
-                    repudiandae excepturi cupiditate.</p>
-            </div>
+            <section class="container py-4">
+                <h2 class="text-center fs-4 fw-bold mb-4">
+                    Seja bem-vindo(a) ao meu portfólio!
+                </h2>
+
+                <div class="fs-5 lh-lg text-secondary">
+                    <p class="mb-4">
+                        Olá! Meu nome é <strong>Lucas</strong> e sou estudante de <strong>Análise e Desenvolvimento de
+                            Sistemas (ADS)</strong> no UniSENAI (Centro Universitário SENAI). Minha trajetória na
+                        tecnologia é movida pela curiosidade constante e pelo desejo de transformar problemas complexos
+                        em soluções digitais eficientes. Durante minha formação acadêmica, venho construindo uma base
+                        sólida em lógica de programação, arquitetura de software e metodologias ágeis, alinhando a
+                        teoria com boas práticas de desenvolvimento para entregar aplicações robustas e funcionais.
+                    </p>
+
+                    <p class="mb-4">
+                        No ecossistema de desenvolvimento, gosto de trabalhar entre o <strong>Front-end</strong> e
+                        o <strong>Back-end</strong>. Na camada de interface, utilizo <span
+                            class="badge text-bg-light border text-dark fs-6">HTML5</span>, <span
+                            class="badge text-bg-light border text-dark fs-6">CSS3</span>, <span
+                            class="badge text-bg-light border text-dark fs-6">JavaScript</span> e <span
+                            class="badge text-bg-light border text-dark fs-6">Bootstrap</span> para criar aplicações
+                        visivelmente atraentes, responsivas e focadas na experiência do usuário. Já na regra de negócio
+                        e lógica de servidor, desenvolvo soluções com <span
+                            class="badge text-bg-light border text-dark fs-6">Java</span> e <span
+                            class="badge text-bg-light border text-dark fs-6">Python</span>, integrando o sistema a
+                        bancos de dados <span class="badge text-bg-light border text-dark fs-6">SQL</span> e <span
+                            class="badge text-bg-light border text-dark fs-6">NoSQL</span> para garantir persistência,
+                        modelagem adequada e segurança das informações.
+                    </p>
+
+                    <p class="mb-4">
+                        Ter essa visão <em>Full Stack</em> me permite entender o ciclo completo de um projeto, desde a
+                        estrutura dos bancos de dados e regras do servidor até a forma como o usuário interage com a
+                        tela. Gosto do desafio de integrar essas duas pontas e estou continuamente estudando novas
+                        ferramentas para aperfeiçoar meu código. Busco oportunidades e projetos desafiadores no mercado
+                        de tecnologia onde eu possa colaborar ativamente, somar com a equipe e evoluir como
+                        desenvolvedor.
+                    </p>
+
+                    <p class="mb-0">
+                        Gosto de encarar desafios porque é neles que eu mais aprendo. Tenho uma curiosidade natural por
+                        entender a tecnologia por completo — desde a lógica do <strong>software</strong> até a estrutura
+                        do <strong>hardware</strong>. Além disso, compreender o funcionamento dos
+                        componentes na prática me dá uma perspectiva muito mais ampla de como o software se conecta ao
+                        sistema. Encaro novos desafios e ferramentas desconhecidas como a oportunidade perfeita para
+                        aprender, testar e evoluir.
+                    </p>
+
+                </div>
+            </section>
         </div>
     </main>
 

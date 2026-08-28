@@ -13,23 +13,182 @@
   <!-- CSS do Bootstrap 5 via CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body class="d-flex flex-column min-vh-100">
-    <header class="navbar bg-dark text-light">
-        <a href="index.html" class="my-auto mx-3 text-uppercase badge fs-6 text-decoration-none">Lucas portfolio</a>
 
-        <a href="projetos.html" class="text-uppercase text-light text-decoration-none m-auto btn btn-outline-secondary px-5">projetos github</a>
-        <a href="experiencia.html" class="text-uppercase text-light text-decoration-none m-auto btn btn-outline-secondary px-5">experiência</a>
-        <a href="contatos.html" class="text-uppercase text-light text-decoration-none m-auto btn btn-outline-secondary px-5">Contatos</a>
-    </header>
+<body class="d-flex flex-column min-vh-100">
+    <header class="navbar navbar-expand-md navbar-dark bg-dark border-bottom border-secondary sticky-top shadow-sm">
+    <div class="container">
+        
+        <a href="index.html" class="navbar-brand fw-bold text-uppercase fs-5">
+            Lucas <span class="text-primary">Portfolio</span>
+        </a>
+
+        
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Alternar navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+       
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto align-items-center gap-2 mt-3 mt-md-0">
+                <li class="nav-item">
+                    <a href="experiencia.html" class="nav-link px-3 fw-medium">Experiência</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projetos.html" class="nav-link px-3 fw-medium">Projetos GitHub</a>
+                </li>
+                <li class="nav-item ms-md-2">
+                    <a href="contatos.html" class="btn btn-outline-primary rounded-pill px-4 fw-semibold text-uppercase">Contatos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
 
   <!-- Conteúdo principal -->
-  <main class="flex-grow-1 container my-5 border border-4 border-black">
-        <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, cum quos rem adipisci commodi
-                exercitationem animi dolore ipsum sit iste nobis doloribus voluptate voluptatum numquam eum unde aperiam
-                odio blanditiis?</p>
+  <main class="flex-grow-1 container my-5">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold text-uppercase">Meus <span class="text-primary">Projetos</span></h2>
+        <p class="text-muted">Repositórios reais e aplicações desenvolvidas no GitHub</p>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        
+        <!-- Projeto 1: CinemaMatch Pro -->
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm p-3">
+                <div class="card-body d-flex flex-column">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <i class="bi bi-film display-5 text-primary"></i>
+                        <a href="https://github.com/Luca4sR0cha/CINEMAMATCH_PRO" target="_blank" rel="noopener noreferrer" class="text-dark fs-4">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                    <h5 class="card-title fw-bold">CinemaMatch Pro</h5>
+                    <p class="card-text text-muted flex-grow-1">Aplicação web interativa para catálogo e recomendação de filmes.</p>
+                    <div class="mb-3">
+                        <span class="badge text-bg-danger">HTML5</span>
+                        <span class="badge text-bg-info text-white">CSS3</span>
+                        <span class="badge text-bg-warning text-dark">JavaScript</span>
+                    </div>
+                    <a href="https://github.com/Luca4sR0cha/CINEMAMATCH_PRO" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary w-100 rounded-pill fw-semibold">
+                        Ver no GitHub <i class="bi bi-arrow-up-right-square ms-1"></i>
+                    </a>
+                </div>
+            </div>
         </div>
-    </main>
+
+        <!-- Projeto 2: Sistema de Monitoramento de Pressão Hidráulica -->
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm p-3">
+                <div class="card-body d-flex flex-column">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <i class="bi bi-speedometer2 display-5 text-danger"></i>
+                        <a href="https://github.com/Luca4sR0cha/Sistema_de_Monitoramento_de_Pressao_Hidraulica" target="_blank" rel="noopener noreferrer" class="text-dark fs-4">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                    <h5 class="card-title fw-bold">Monitoramento de Pressão</h5>
+                    <p class="card-text text-muted flex-grow-1">Interface web para visualização e acompanhamento de dados de pressão hidráulica.</p>
+                    <div class="mb-3">
+                        <span class="badge text-bg-danger">HTML5</span>
+                        <span class="badge text-bg-info text-white">CSS3</span>
+                        <span class="badge text-bg-warning text-dark">JavaScript</span>
+                    </div>
+                    <a href="https://github.com/Luca4sR0cha/Sistema_de_Monitoramento_de_Pressao_Hidraulica" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary w-100 rounded-pill fw-semibold">
+                        Ver no GitHub <i class="bi bi-arrow-up-right-square ms-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projeto 3: TodoApi -->
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm p-3">
+                <div class="card-body d-flex flex-column">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <i class="bi bi-check2-square display-5 text-success"></i>
+                        <a href="https://github.com/Luca4sR0cha/TodoApi" target="_blank" rel="noopener noreferrer" class="text-dark fs-4">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                    <h5 class="card-title fw-bold">TodoApi</h5>
+                    <p class="card-text text-muted flex-grow-1">API RESTful desenvolvida em C# para gerenciamento e controle de tarefas.</p>
+                    <div class="mb-3">
+                        <span class="badge text-bg-primary">C#</span>
+                        <span class="badge text-bg-dark">API REST</span>
+                        <span class="badge text-bg-secondary">Back-end</span>
+                    </div>
+                    <a href="https://github.com/Luca4sR0cha/TodoApi" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary w-100 rounded-pill fw-semibold">
+                        Ver no GitHub <i class="bi bi-arrow-up-right-square ms-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projeto 4: QuizEnem -->
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm p-3">
+                <div class="card-body d-flex flex-column">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <i class="bi bi-patch-question-fill display-5 text-warning"></i>
+                        <a href="https://github.com/Luca4sR0cha/QuizEnem" target="_blank" rel="noopener noreferrer" class="text-dark fs-4">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                    <h5 class="card-title fw-bold">QuizEnem</h5>
+                    <p class="card-text text-muted flex-grow-1">Aplicação Desktop em Python com interface própria focada em simulados do ENEM.</p>
+                    <div class="mb-3">
+                        <span class="badge text-bg-info text-white">Python</span>
+                        <span class="badge text-bg-dark">GUI Própria</span>
+                        <span class="badge text-bg-secondary">Desktop</span>
+                    </div>
+                    <a href="https://github.com/Luca4sR0cha/QuizEnem" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary w-100 rounded-pill fw-semibold">
+                        Ver no GitHub <i class="bi bi-arrow-up-right-square ms-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projeto 5: SkyTrack Logistics -->
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm p-3">
+                <div class="card-body d-flex flex-column">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <i class="bi bi-box-seam-fill display-5 text-info"></i>
+                        <a href="https://github.com/brugnoloJoao/skytrack-logistics" target="_blank" rel="noopener noreferrer" class="text-dark fs-4">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                    <h5 class="card-title fw-bold">SkyTrack Logistics</h5>
+                    <p class="card-text text-muted flex-grow-1">Projeto colaborativo com interface focada em soluções para o setor logístico.</p>
+                    <div class="mb-3">
+                        <span class="badge text-bg-danger">HTML5</span>
+                        <span class="badge text-bg-info text-white">CSS3</span>
+                        <span class="badge text-bg-warning text-dark">JavaScript</span>
+                    </div>
+                    <a href="https://github.com/brugnoloJoao/skytrack-logistics" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary w-100 rounded-pill fw-semibold">
+                        Ver no GitHub <i class="bi bi-arrow-up-right-square ms-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card CTA: Perfil do GitHub -->
+        <div class="col">
+            <div class="card h-100 border-2 border-dashed bg-light p-3 text-center d-flex align-items-center justify-content-center">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                    <i class="bi bi-github display-3 text-dark mb-3"></i>
+                    <h5 class="card-title fw-bold">Ver perfil completo</h5>
+                    <p class="card-text text-muted">Acompanhe todos os meus commits e repositórios públicos no GitHub.</p>
+                    <a href="https://github.com/Luca4sR0cha" target="_blank" rel="noopener noreferrer" class="btn btn-dark rounded-pill fw-semibold px-4">
+                        @Luca4sR0cha
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
 
   <footer class="bg-dark text-white pt-5 pb-4 mt-5">
         <div class="container text-center text-md-start">
